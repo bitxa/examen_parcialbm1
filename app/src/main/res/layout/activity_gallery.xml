@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalleryActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="410dp"
+        android:layout_height="75dp"
+        android:background="#098FBA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="408dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="OPCIONES DE LA APP"
+            android:textAlignment="viewStart"
+            android:textColor="#EFF8FA"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="OPCIONES DE LA APP"
+        android:textAlignment="viewStart"
+        android:textColor="#EFF8FA"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="24dp" />
+
+
+    <Button
+        android:id="@+id/newphoto_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@android:drawable/ic_menu_gallery"
+        android:drawableTint="#FFFFFF"
+        android:text="FOTO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="179dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nature2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newphoto_btn" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="184dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nature4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newphoto_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
